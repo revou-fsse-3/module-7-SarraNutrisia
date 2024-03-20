@@ -18,3 +18,10 @@ CREATE TABLE product_review (
     review_content TEXT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
+
+INSERT INTO product_review (product_id, email, rating, review_content) VALUES (1,'test@gmail.com', 4, 'Good');
+INSERT INTO product_review (product_id, email, rating, review_content) VALUES (1,'test@gmail.com', 2, 'Bad');
+INSERT INTO product_review (product_id, email, rating, review_content) VALUES (1,'test@gmail.com', 5, 'Oustanding');
+
+select * from product;
+select * from product_review;
